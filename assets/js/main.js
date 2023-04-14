@@ -1,4 +1,4 @@
-const pathImg = `./assets/img/`
+const pathImg = `./assets/`
 
 const images = [
     {
@@ -25,20 +25,20 @@ const images = [
 ];
 
 
-let HTMLplace = document.querySelector('place');
+
 let slideMain = document.querySelector('mainImg')
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
 for (let w = 0; w < images.length; w++) {
 
-    slideMain.innerHTML =
-        `
+    slideMain.innerHTML += `
+    
     <div class="prev">
         <i class="fa-solid fa-chevron-left"></i>
     </div>
     <div class="pic">
-        <img src="${pathImg}${image[i]}" alt="">
+        <img src="${pathImg}${image[w]}" alt="">
     </div>
     <div class="next">
         <i class="fa-solid fa-chevron-right"></i>
